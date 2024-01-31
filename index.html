@@ -1,43 +1,142 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Netflix</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js" integrity="sha384-3LK/3kTpDE/Pkp8gTNp2gR/2gOiwQ6QaO7Td0zV76UFJVhqLl4Vl3KL1We6q6wR9" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
+  <link rel="icon" type="image/x-icon" href="https://cdn.vox-cdn.com/thumbor/pNxD2NFOCjbljnMPUSGdkFWeDjI=/0x0:3151x2048/1400x788/filters:focal(1575x1024:1576x1025)/cdn.vox-cdn.com/uploads/chorus_asset/file/15844974/netflixlogo.0.0.1466448626.png">
+</head>
+<body>
+  <div class="wrapper">
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>Netflix - Firebase</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <!-- HEADER -->
+    <header>
+      <div class="netflixLogo">
+        <a id="logo" href="#home"><img src="https://images.ctfassets.net/y2ske730sjqp/1aONibCke6niZhgPxuiilC/2c401b05a07288746ddf3bd3943fbc76/BrandAssets_Logos_01-Wordmark.jpg?w=940" alt="Logo Image"></a>
+      </div>      
+      <nav class="main-nav">                
+        <a href="#home">Home</a>
+        <a href="#tvShows">TV Shows</a>
+        <a href="#movies">Movies</a>
+        <a href="#originals">Originals</a>
+        <a href="#">Recently Added</a>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      </nav>
+      <nav class="sub-nav">
+        <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+        <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
+        <a href="#">Account</a>        
+      </nav>      
+    </header>
+    <!-- END OF HEADER -->
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
-  </body>
+    <!-- MAIN CONTAINER -->
+    <section class="main-container" >
+      <div class="location" id="home">
+          <h1 id="home">Popular on Netflix</h1>
+          <div class="box">
+            <a href=""><img src="https://occ-0-1123-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbTlz8VeTWzaiVDJQfylYCrVqQNif4ErvhQ6oE5IqfmL39-OGQZWCbW55p42FtzhG6rr7BXPDUrw5ewZL9wQ7mhMRgE2XRpoiOREOam44EO6IdusvVJqLggkM3vl3VTUYwEu0w.jpg?r=ba6" alt=""></a>
+            <a href=""><img src="https://jennyackland.files.wordpress.com/2013/01/8mile1.jpg" alt=""></a>
+            <a href=""><img src="https://i.ytimg.com/vi/Erk0Rcsp8Lw/maxresdefault.jpg" alt=""></a>
+            <a href=""><img src="https://shaleroracle.com/wp-content/uploads/2021/01/grey.jpg" alt=""></a>
+            <a href=""><img src="https://m.media-amazon.com/images/S/pv-target-images/605d1856da115d6b6e3f176b63b0020aa46eee11ac865d9b7ee93c594555e293.jpg" alt=""></a>
+            <a href=""><img src="https://www.flixfilm.dk/wp-content/uploads/2018/06/liquid-science-netflix.jpg" alt=""></a>
+
+            <a href=""><img src="https://occ-0-1123-993.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABbTlz8VeTWzaiVDJQfylYCrVqQNif4ErvhQ6oE5IqfmL39-OGQZWCbW55p42FtzhG6rr7BXPDUrw5ewZL9wQ7mhMRgE2XRpoiOREOam44EO6IdusvVJqLggkM3vl3VTUYwEu0w.jpg?r=ba6" alt=""></a>
+            <a href=""><img src="https://i.ytimg.com/vi/Bvv97sCcruY/maxresdefault.jpg " alt=""></a>
+            <a href=""><img src="https://upload.wikimedia.org/wikipedia/en/d/d9/The_Vietnam_War_%28TV_series%29_title_card.jpg" alt=""></a>
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+            <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>        
+          </div>
+      </div>
+
+
+      <h1 id="myList">Trending Now</h1>
+      <div class="box">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>                  
+      </div>
+
+      <h1 id="tvShows">TV Shows</h1>
+      <div class="box">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>              
+      </div>
+
+
+      <h1 id="movies">Blockbuster Action & Adventure</h1>
+      <div class="box">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>                
+      </div>
+
+      <h1 id="originals">Netflix Originals</h1>
+      <div class="box">
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>
+        <a href=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbmwJOM_cZ2oHY77kAqeLfRIZ20psu-xZgyA&usqp=CAU" alt=""></a>                
+      </div>
+
+    <!-- END OF MAIN CONTAINER -->
+
+    <!-- LINKS -->
+    <section class="link">
+      <div class="logos">
+        <a href="#"><i class="fab fa-facebook-square fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x logo"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x logo"></i></a>
+      </div>
+      <div class="sub-links">
+        <ul>
+          <li><a href="#">Audio and Subtitles</a></li>
+          <li><a href="#">Audio Description</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Media Center</a></li>
+          <li><a href="#">Investor Relations</a></li>
+          <li><a href="#">Jobs</a></li>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Legal Notices</a></li>
+          <li><a href="#">Corporate Information</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </section>
+    <!-- END OF LINKS -->
+
+    <!-- FOOTER -->
+    <footer>
+      <p>&copy 1997-2024 Netflix, Inc.</p>
+     
+    </footer>
+  </div>
+</body>
 </html>
